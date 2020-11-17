@@ -9082,7 +9082,7 @@ a.text-dark:hover {
     top: 1rem;
     font-size: 3rem;
     line-height: 3rem;
-    color: #1abc9c;
+    /* color: #1abc9c; */
     opacity: 1;
 }
 .floating-label-form-group {
@@ -9330,6 +9330,49 @@ form .row:first-child .floating-label-form-group {
   width: 15px;
   filter:blur(1px);
   opacity: 0.3;
+}
+
+.hcenter {
+  margin: auto;
+  width: 600px;
+}
+.inner {
+  /* background: rgb(95, 105, 155);  */
+  background: #202D33;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.inner:hover {
+  clip-path: circle(75%);
+  /* background: #405e97; */
+  background-image: linear-gradient(to left bottom, #435a6b, #2a506d, #025492);
+}
+.inner:hover p {
+  opacity: 1;
+}
+.inner h1 {
+  color: white;
+  margin: 0;
+}
+.inner p {
+  opacity: 0;
+  color: white;
+  /* font-size: 0.8rem; */
+}
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  margin-top: -13px;
+  margin-right: -9px;
+}
+.inner:hover span {
+  opacity: 0;
 }
 
 /* .small-sep {
