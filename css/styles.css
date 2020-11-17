@@ -8970,7 +8970,7 @@ a.text-dark:hover {
     /* animation-duration: 1s; */
 }
 .masthead .masthead-subheading {
-    font-size: 1.25rem;
+    font-size: 1rem;
     animation-name: name;
     animation-duration: 2s;
 }
@@ -9037,7 +9037,7 @@ a.text-dark:hover {
         letter-spacing: 0.5rem;
     }
     .masthead .masthead-subheading {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 .portfolio .portfolio-item {
