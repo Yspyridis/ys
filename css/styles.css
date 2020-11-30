@@ -8976,7 +8976,7 @@ a.text-dark:hover {
 }
 .masthead .masthead-avatar {
     border-radius: 50%;
-    opacity:95%;
+    opacity:88%;
     width: 12rem;
     /* animation-name: avatar; */
     /* animation-delay: 2s; */
@@ -9082,8 +9082,11 @@ a.text-dark:hover {
     top: 1rem;
     font-size: 3rem;
     line-height: 3rem;
-    /* color: #1abc9c; */
+    color: #212529;
     opacity: 1;
+}
+.close .fa {
+  font-size: smaller;
 }
 .floating-label-form-group {
     position: relative;
