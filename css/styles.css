@@ -498,6 +498,19 @@ pre code {
     margin-right: auto;
     margin-left: auto;
 }
+@media (max-width: 576px) {
+  .masthead .masthead-avatar {
+      position: absolute;
+      top: 20%;
+      left: 25%;
+  }
+  .masthead .masthead-heading {
+      margin-top: 235px;
+      font-size: 1.5rem !important;
+      line-height: 3.5rem !important;
+      letter-spacing: 0.5rem !important;
+  }
+}
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -511,6 +524,8 @@ pre code {
 @media (min-width: 992px) {
   .masthead .masthead-avatar {
       position: absolute;
+      top: 20%;
+      left: 44.5%;
   }
     .container {
         max-width: 960px;
@@ -8982,8 +8997,7 @@ a.text-dark:hover {
 }
 .masthead .masthead-avatar {
     /* position: absolute; */
-    top: 20%;
-    left: 44.5%;
+    z-index: 1;
     /* right: 40; */
     border-radius: 50%;
     /* opacity:88%; */
@@ -9042,7 +9056,7 @@ a.text-dark:hover {
         padding-bottom: 6rem;
     }
     .masthead .masthead-heading {
-      margin-top: 235px;
+        margin-top: 235px;
         font-size: 2rem;
         /* line-height: 3.5rem; */
         letter-spacing: 0.5rem;
