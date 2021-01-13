@@ -9169,6 +9169,7 @@ form .row:first-child .floating-label-form-group {
     height: 2rem;
 }
 .portfolio {
+    position: sticky;
     padding-top: 6rem;
     padding-bottom: 4.5rem;
 }
