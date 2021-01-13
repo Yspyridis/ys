@@ -509,6 +509,9 @@ pre code {
     }
 }
 @media (min-width: 992px) {
+  .masthead .masthead-avatar {
+      position: absolute;
+  }
     .container {
         max-width: 960px;
     }
@@ -8978,14 +8981,13 @@ a.text-dark:hover {
     animation-duration: 2s;
 }
 .masthead .masthead-avatar {
-    position: absolute;
+    /* position: absolute; */
     top: 20%;
     left: 44.5%;
     /* right: 40; */
     border-radius: 50%;
     /* opacity:88%; */
     width: 12rem;
-    z-index: 120;
     /* animation-name: avatar; */
     /* animation-delay: 2s; */
     /* animation-duration: 1s; */
