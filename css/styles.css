@@ -5739,7 +5739,9 @@ a.close.disabled {
 }
 .bg-primary {
     /* background-color: #1abc9c !important; */
-    background-color: #2c3e50; !important;
+    /* background-color: #2c3e50; !important; */
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+
 }
 a.bg-primary:focus,
 a.bg-primary:hover,
@@ -8956,7 +8958,8 @@ a.text-dark:hover {
     }
 }
 .masthead {
-    background: url("../assets/img/3(fhd).jpg");
+    /* background: url("../assets/img/3(fhd).jpg"); */
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     background-color: #2c3e50;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -8975,9 +8978,14 @@ a.text-dark:hover {
     animation-duration: 2s;
 }
 .masthead .masthead-avatar {
+    position: absolute;
+    top: 20%;
+    left: 44.5%;
+    /* right: 40; */
     border-radius: 50%;
-    opacity:88%;
+    /* opacity:88%; */
     width: 12rem;
+    z-index: 120;
     /* animation-name: avatar; */
     /* animation-delay: 2s; */
     /* animation-duration: 1s; */
@@ -9032,6 +9040,7 @@ a.text-dark:hover {
         padding-bottom: 6rem;
     }
     .masthead .masthead-heading {
+      margin-top: 235px;
         font-size: 2rem;
         /* line-height: 3.5rem; */
         letter-spacing: 0.5rem;
@@ -9137,6 +9146,7 @@ form .row:first-child .floating-label-form-group {
     color: #fff;
 }
 .copyright {
+    position: sticky;
     background-color: #1a252f;
 }
 #brandImage {
