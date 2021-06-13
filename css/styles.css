@@ -9405,6 +9405,9 @@ form .row:first-child .floating-label-form-group {
   opacity: 0;
 }
 
+.logo {
+  width: 20px;
+}
 /* .small-sep {
   margin-bottom: 5px;
 } */
