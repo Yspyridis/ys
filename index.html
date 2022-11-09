@@ -20,7 +20,8 @@
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg fixed-top bg-dark" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">YS</a>
+            <!-- <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">YS</a> -->
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" src="assets/img/logo2/logo-white.png"></a>
             <!-- <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" src="assets/img/ylogo.png"</a> -->
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -30,6 +31,8 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">EU Projects</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#research">Research</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -53,7 +56,13 @@
                 <h1 class="masthead-heading mb-0">YANNIS SPYRIDIS</h1>
                 <br>
                 <!-- <p class="pre-wrap masthead-subheading font-weight-light mb-0">PhD Student <i class="fa fa-code light"></i> Research Associate</p> -->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Research Associate <i class="fa fa-code light"></i> Software Engineer</p>
+                <!-- <p class="pre-wrap masthead-subheading font-weight-light mb-0">Research Associate <i class="fa fa-code light"></i> Software Engineer</p> -->
+                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Research Scientist - Software Engineer</p>
+
+                <div class="scroll-b">
+                    <!-- <a class="scroll-button nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">></a> -->
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about"><span></span></a>
+                </div>
 
             <!-- </div> -->
         </header>
@@ -64,12 +73,12 @@
                     <h2 class="page-section-heading d-inline-block push">About</h2>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-5 ml-auto">
-                        <p class="pre-wrap lead">Yannis Spyridis holds a BSc in Computer Science from the University of Sheffield. In 2018 he started pursuing a PhD at the department of Electrical and Electronic Engineering. He is also involved in several european research projects, funded by the Horizon 2020 and Erasmsus+ programmes.</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 ml-auto">
+                        <p class="pre-wrap lead">Yannis Spyridis holds a BSc in Computer Science from the University of Sheffield, where he is currently pursuing a PhD diploma at the department of Electrical and Electronic Engineering. He is also involved in several european research projects, funded by the Horizon 2020 and Erasmsus+ programmes.</p>
                     </div>
-                    <div class="col-lg-5 mr-auto">
-                        <p class="pre-wrap lead">His main research interests evolve around the areas of IoT distributed architectures and wireless communications in unmanned aerial vehicle (UAV) networks, as well as security and privacy in smart networks. He is also engaged in several mobile and web developement projects.</p>
+                    <div class="col-lg-6 mr-auto">
+                        <p class="pre-wrap lead">His main research interests evolve around the areas of multi-agent cooperative policies in unmanned aerial vehicle networks through dynamic programming approaches, as well as security and privacy in smart networks. He is also engaged in several mobile and web developement projects.</p>
                     </div>
                 </div>
             </div>
@@ -83,14 +92,14 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-info fa-2x"></i></div>
                             </div><img class="img-fluid" src="assets/img/portfolio/sdn-logo-sq.jpg"/>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-info fa-2x"></i></div>
@@ -98,6 +107,16 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="row justify-content-center">
+                    <!-- Portfolio Items-->
+                    <div class="col-md-6 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-info fa-2x"></i></div>
+                            </div><img class="img-fluid-2" src="assets/img/portfolio/respond-a_logo_cropped.jpg"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,7 +131,7 @@
                                 <div class="col-lg-8">
                                     <img class="img-fluid rounded mb-5 cardimg" src="assets/img/portfolio/sdn-logo.png"/>
                                     <p class="mb-5">SDN-microSENSE aims at providing and demonstrating a secure, resilient to cyber-attacks, privacy-enabled, and protected against data breaches solution for decentralised Electrical Power and Energy Systems (EPES). All designed, developed, and tested technologies consider the latest related research findings and maintain high compliance with current industrial standards (e.g., IEC standards).</p>
-                                    <button class="btn btn-primary"><a class="text-white" href="https://www.sdnmicrosense.eu/" target="_blank">See More</a></button>
+                                    <button class="btn btn-primary"><a class="text-white" href="https://www.sdnmicrosense.eu/" target="_blank">Official Website</a></button>
                                     <!-- <button class="btn btn-primary"><a class="text-white" href="" target="">Close</a></button> -->
                                 </div>
                             </div>
@@ -131,14 +150,33 @@
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5 cardimg" src="assets/img/portfolio/spear-logo-sq.jpg"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="pull mb-5">The SPEAR (Secure and PrivatE smArt gRid) project is a research program, funded by the Horizon 2020 framework programme of the European Union and it aims at developing an integrated platform of methods, processes, and tools for:
+                                    <p class="pull justify">The SPEAR (Secure and PrivatE smArt gRid) project is a research program, funded by the Horizon 2020 framework programme of the European Union and it aims at developing an integrated platform of methods, processes, and tools for:
 
                                     <li class="justify">Timely detecting evolved security attacks using big data analytics, advanced visual-aided anomaly detection tools, and smart node trust management schemes;</li>
                                     <li class="justify">Developing an advanced forensic readiness framework for collecting attack traces and preparing the necessary legal evidence in court, while preserving user private information;</li>
                                     <li class="justify">Implementing an anonymous smart grid channel for mitigating the lack of trust in exchanging sensitive information about cyberattack incidents;</li>
                                     <li class="justify">Performing risk analysis and awareness through cyber hygiene frameworks, while empowering EU-wide consensus, by collaborating with European and global security organizations, standardization bodies, industrial groups and smart grid operators;</li>
                                     <li class="justify">Exploiting the research outcomes to more critical infrastructure domains, while creating competitive business models for utilizing the implemented security tools in smart grid operators and actors across Europe.</li></p>
-                                    <button class="btn btn-primary"><a class="text-white" href="https://www.spear2020.eu/" target="_blank">See More</a></button>
+                                    <button class="btn btn-primary"><a class="text-white" href="https://www.spear2020.eu/" target="_blank">Official Website</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-window-close"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <img class="img-fluid rounded mb-5 cardimg" src="assets/img/portfolio/respond-a_logo_cropped.jpg"/>
+                                    <p class="mb-5">The RESPOND-A project was established to create immediate access to technological advancements for First Responders and sets its proposal focus within designing and implementing network-enabled tools and innovative equipment that will entail continuous security and Safety Assessment along with situational-wide monitoring capabilities to the Responders for resolving those gaps under all the three hazard types mentioned previously. The uprising focus of the intended tools and equipment will lay within dimensioning the holistic viewpoint and management of the disaster incident in real-time via familiar to First Responders devices (i.e. personal smartphones, tablets, laptops, etc.), without the assistance of neither specialised personnel or telecommunication service providers. </p>
+                                    <button class="btn btn-primary"><a class="text-white" href="https://respond-a-project.eu/" target="_blank">Official Website</a></button>
+                                    <!-- <button class="btn btn-primary"><a class="text-white" href="" target="">Close</a></button> -->
                                 </div>
                             </div>
                         </div>
@@ -154,6 +192,38 @@
                     <h2 class="page-section-heading mb-0 d-inline-block">Research</h2>
                 </div>
 
+                <div class="text-center push">
+                    <h5>Scientific Publications</h5>
+                </div>
+
+                <div class="acc-container">
+                    <div class="acc-btn"><h6>International peer-reviewed Journals</h6><div class="expand-button">></div></div>
+                    <!-- <div class="scroll-b">
+                        <span></span>
+                    </div> -->
+                    <div class="acc-content">
+                    <ul>
+                        <li>P. G. Radoglou, P. Sarigiannidis, C. Dalamagkas, Y. Spyridis, T. Lagkas, et al., "<i>SDN-Based Resilient Smart Grid: The SDN-microSENSE Architecture</i>," Digital, 2021, 1, no. 4, doi: <a href="https://doi.org/10.3390/digital1040013" target="_blank">10.3390/digital1040013</a>.</li>
+                        <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis, V. Argyriou, A. Sarigiannidis, G. Eleftherakis, J. Zhang, "<i>Towards 6G IoT: Tracing Mobile Sensor Nodes with Deep Learning Clustering in UAV Networks</i>," Sensors 2021, 21, 3936, doi: <a href="https://doi.org/10.3390/s21113936" target="_blank">10.3390/s21113936</a>.</li>
+                        <li>P. G. Radoglou, P. Sarigiannidis, E. Iturbe, E. Rios, S. Martinez, A. Sarigiannidis,  G. Efstathopoulos, Y. Spyridis, A. Sesis, et al., "<i>SPEAR SIEM: A Security Information and Event Management System for the Smart Grid</i>," Computer Networks, 2021, doi: <a href="https://doi.org/10.1016/j.comnet.2021.108008" target="_blank">10.1016/j.comnet.2021.108008</a>.</li>
+                        <li>Z. Sun, Y. Spyridis, T. Lagkas, A. Sesis, G. Efstathopoulos, P. Sarigiannidis, "<i>End-to-End Deep Graph Convolutional Neural Network Approach for Intentional Islanding in Power Systems Considering Load-Generation Balance</i>," Sensors 2021, 21, 1650, doi: <a href="https://doi.org/10.3390/s21051650" target="_blank">10.3390/s21051650</a>.</li>
+                        <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis, J. Zhang, "<i>Modelling and simulation of a new cooperative algorithm for UAV swarm coordination in mobile RF target tracking</i>," Simulation Modelling Practice and Theory, Volume 107, 2021, 102232, ISSN 1569-190X, doi: <a href="https://doi.org/10.1016/j.simpat.2020.102232" target="_blank">10.1016/j.simpat.2020.102232</a>.</li>
+                    </ul>
+                    </div>
+                    <div class="small-sep"></div>
+            
+                    <div class="acc-btn"><h6>International peer-reviewed Conference Proceedings</h6><div class="expand-button">></div></div>
+                    <div class="acc-content">
+                    <ul>
+                        <li>Z. Sun, Y. Spyridis, A. Sesis, G. Efstathopoulos, E. Grigoriou, T. Lagkas, P. Sarigiannidis, "<i>Intentional Islanding of Power Systems Through Self-Embedding Learning</i>," 2021 IEEE Globecom Workshops (GC Wkshps), 2021, pp. 1-6, doi: <a href="https://doi.org/http://dx.doi.org/10.1109/GCWkshps52748.2021.9682069" target="_blank">10.1109/GCWkshps52748.2021.9682069</a>.</li>
+                        <li>I. Siniosoglou, P. Sarigiannidis, Y. Spyridis, A. Khadka, G. Efstathopoulos, T. Lagkas, "<i>Synthetic Traffic Signs Dataset for Traffic Sign Detection & Recognition In Distributed Smart Systems</i>," 2021 17th International Conference on Distributed Computing in Sensor Systems (DCOSS), 2021, pp. 302-308, doi: <a href="https://doi.org/10.1109/DCOSS52077.2021.00056" target="_blank">10.1109/DCOSS52077.2021.00056</a>.</li>
+                        <li>O. Peretti, Y. Spyridis, A. Sesis, G. Efstathopoulos, "<i>Gamified First Responder Training Solution in Virtual Reality</i>," 2021 17th International Conference on Distributed Computing in Sensor Systems (DCOSS), 2021, pp. 295-301, doi: <a href="https://doi.org/10.1109/DCOSS52077.2021.00055" target="_blank">10.1109/DCOSS52077.2021.00055</a>.</li>
+                        <li>P. S. Paradell, Y. Spyridis, A. Colet, A. Ivanova, J. L. Domínguez – García, A. Sesis, G. Efstathopoulos, "<i>Increasing resilience of power systems using intentional islanding; a comparison of Binary genetic algorithm and deep learning based methods</i>," 2021 IEEE International Conference on Cyber Security and Resilience (CSR), 2021, pp. 491-496, doi: <a href="https://doi.org/10.1109/CSR51186.2021.9527918" target="_blank">10.1109/CSR51186.2021.9527918</a>.</li>
+                        <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis and J. Zhang, "<i>Rule-based Autonomous Tracking of RF Transmitter Using a UAV Swarm</i>," 2020 12th International Symposium on Communication Systems, Networks and Digital Signal Processing (CSNDSP), Porto, Portugal, 2020, pp. 1-3, doi: <a href="https://ieeexplore.ieee.org/document/9249591" target="_blank">10.1109/CSNDSP49049.2020.9249591<a/>.</li>
+                    </ul>
+                    </div>
+                </div>
+            
                 <!-- <div class="row justify-content-center">
 
                     <article id="iot" class="rcard">
@@ -189,22 +259,18 @@
                     </article>
                 </div> -->
 
-                <div class="divider-custom divider-light"></div>
-                <div class="divider-custom divider-light"></div>
+                <!-- <div class="divider-custom divider-light"></div>
+                <div class="divider-custom divider-light"></div> -->
 
-                <div class="text-center push">
-                    <h5>Publications</h5>
-                </div>
-
-                <div class="row justify-content-center">
+                <!-- <div class="row justify-content-center">
                   <div class="col-md-3"><b>Journal Articles</b></div>
                   <div class="col-md-9">
                     <!-- <br> -->
-                  </div>
-                </div>
-                <hr>
+                  <!-- </div>
+                </div> -->
+                <!-- <hr> -->
 
-                <div class="row justify-content-center">
+                <!-- <div class="row justify-content-center">
                   <div class="col-md-2">September 2021</div>
                   <div class="col-md-10">
                   <p>P. G. Radoglou, P. Sarigiannidis, C. Dalamagkas, Y. Spyridis, T. Lagkas, et al., "<i>SDN-Based Resilient Smart Grid: The SDN-microSENSE Architecture</i>," Digital, 2021, 1, no. 4, doi: <a href="https://doi.org/10.3390/digital1040013" target="_blank">10.3390/digital1040013</a>.</p>
@@ -244,7 +310,6 @@
                 <div class="row justify-content-center">
                   <div class="col-md-3"><b>Conference Papers</b></div>
                   <div class="col-md-9">
-                    <!-- <br> -->
                   </div>
                 </div>
                 <hr>
@@ -282,16 +347,30 @@
                   <div class="col-md-10">
                   <p>Y. Spyridis, T. Lagkas, P. Sarigiannidis and J. Zhang, "<i>Rule-based Autonomous Tracking of RF Transmitter Using a UAV Swarm</i>," 2020 12th International Symposium on Communication Systems, Networks and Digital Signal Processing (CSNDSP), Porto, Portugal, 2020, pp. 1-3, doi: <a href="https://ieeexplore.ieee.org/document/9249591" target="_blank">10.1109/CSNDSP49049.2020.9249591<a/>.</p>
                   </div>
-                </div>
+                </div> -->
 
             <div class="divider-custom divider-light"></div>
             <div class="divider-custom divider-light"></div>
+            <!-- <div class="text-center"><img class="logo2" src="assets/img/logo2/logo-black.png"></div> -->
+           
 
-            <div class="inner hcenter">
+            <!-- <div class="inner hcenter">
                 <span>i</span>
                 <p>Check again soon for more publications and additional content.</p>
+            </div> -->
+            
             </div>
-
+        </section>
+        <section class="page-section bg-primary text-white portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <div class="text-center push">
+                    <h2 class="page-section-heading mb-0 d-inline-block">Portfolio</h2>
+                </div>
+                <div class="divider-custom divider-light"></div>
+                <div class="divider-custom divider-light"></div>
+                <!-- <div class="text-center"><img class="logo2" src="assets/img/logo2/logo-no-background.png"></div> -->
+            </div>
         </section>
 
         <!-- Copyright Section-->
@@ -299,7 +378,7 @@
             <!-- <div class="container"><small class="pre-wrap">Yannis Spyridis 2020</small></div> -->
             <div class="container text-center">
               <!-- <small class="pre-wrap text-primary">Yannis Spyridis 2020 -</small> -->
-              <div class="text-primary">Yannis Spyridis 2021 -
+              <div class="text-primary">Yannis Spyridis 2022 -
               <a href="mailto:io.spyridis@gmail.com" target="_blank" class="ml fa fa-envelope-o"></a>
               <a href="https://www.linkedin.com/in/yannis-spyridis-ab710887/" target="_blank" class="ml fa fa-linkedin-square"></a>
               <a href="https://github.com/Yspyridis" target="_blank" class="ml fa fa-github"></a>
