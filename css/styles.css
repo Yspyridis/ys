@@ -9383,11 +9383,11 @@ form .row:first-child .floating-label-form-group {
   /* background: rgb(95, 105, 155);  */
   background: rgb(255, 255, 255); 
   /* background: #202D33; */
-  padding: 1.8rem;
+  padding: 1.3rem;
   /* padding-top: 30px;
   padding-left: 30px; */
   border-radius: 10px;
-  width: 250px;
+  width: 175px;
   clip-path: circle(10% at 90% 20%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
