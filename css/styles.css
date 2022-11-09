@@ -9027,6 +9027,10 @@ a.text-dark:hover {
   animation-duration: 3.5s;
   min-height: 520px;
 }
+/* #portfolio {
+  min-height: 520px;
+} */
+
 @keyframes avatar {
   0%   {opacity:0%;}
   10%  {opacity:0%;}
@@ -9377,8 +9381,11 @@ form .row:first-child .floating-label-form-group {
 }
 .inner {
   /* background: rgb(95, 105, 155);  */
-  background: #202D33;
-  padding: 30px;
+  background: rgb(255, 255, 255); 
+  /* background: #202D33; */
+  padding: 1.8rem;
+  /* padding-top: 30px;
+  padding-left: 30px; */
   border-radius: 10px;
   width: 250px;
   clip-path: circle(10% at 90% 20%);
@@ -9388,23 +9395,25 @@ form .row:first-child .floating-label-form-group {
 .inner:hover {
   clip-path: circle(75%);
   /* background: #405e97; */
-  background-image: linear-gradient(to left bottom, #435a6b, #2a506d, #025492);
+  background: white;
+  /* background-image: linear-gradient(to left bottom, #435a6b, #2a506d, #025492); */
+  /* background-image: linear-gradient(to left bottom, white, --gray, --gray-dark); */
 }
 .inner:hover p {
   opacity: 1;
 }
 .inner h1 {
-  color: white;
+  color: black;
   margin: 0;
 }
 .inner p {
   opacity: 0;
-  color: white;
+  color: black;
   /* font-size: 0.8rem; */
 }
 .inner span {
   float: right;
-  color: white;
+  color: black;
   font-weight: bold;
   transition: color 0.5s;
   margin-top: -13px;
