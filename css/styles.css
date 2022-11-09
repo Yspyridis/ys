@@ -9025,7 +9025,7 @@ a.text-dark:hover {
 #about {
   animation-name: about;
   animation-duration: 3.5s;
-  min-height: 490px;
+  min-height: 520px;
 }
 @keyframes avatar {
   0%   {opacity:0%;}
