@@ -518,10 +518,10 @@ pre code {
       letter-spacing: 0.5rem !important;
   }
   .masthead .masthead-subheading {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
   }
   .lead {
-    font-size: 0.85rem;
+    font-size: 1rem !important;
     text-align: justify !important;
   }
   .col-lg-6 {
@@ -535,7 +535,7 @@ pre code {
     margin-left: -6.5% !important;
   }
   p, li {
-    font-size: 0.85rem !important;
+    font-size: 0.85rem;
   }
   .acc-content {
     padding: 0% !important;
