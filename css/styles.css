@@ -505,6 +505,9 @@ pre code {
     margin-left: auto;
 }
 @media (max-width: 576px) {
+    .masthead{
+        height: 100vh;
+    }
   .masthead .masthead-avatar {
       /* position: absolute; */
       top: 20%;
