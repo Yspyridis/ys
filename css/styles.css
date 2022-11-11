@@ -509,6 +509,7 @@ pre code {
       /* position: absolute; */
       top: 20%;
       left: 25%;
+      box-shadow: 0 0 25px rgba(214,215,216,.6);
   }
   .masthead .masthead-heading {
       /* margin-top: 235px; */
@@ -9004,9 +9005,10 @@ a.text-dark:hover {
 }
 .masthead .masthead-avatar {
     /* position: absolute; */
-    z-index: 1;
+    z-index: 100;
     /* right: 40; */
     border-radius: 50%;
+    box-shadow: 0 0 25px rgba(214,215,216,.6);
     /* opacity:88%; */
     width: 12rem;
     /* animation-name: avatar; */
