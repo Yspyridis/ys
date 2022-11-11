@@ -526,6 +526,10 @@ pre code {
   .lead {
     font-size: 1rem !important;
     text-align: justify !important;
+    margin-bottom: 10px;
+  }
+  #l1 {
+    margin-bottom: 40px;
   }
   .col-lg-6 {
     padding-right: 2rem !important;
@@ -544,6 +548,9 @@ pre code {
     padding: 0% !important;
     padding-top: 5% !important;
     padding-right: 5% !important;
+  }
+  #about {
+    max-height: 100vh !important;
   }
 
 }
