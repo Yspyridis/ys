@@ -509,7 +509,8 @@ pre code {
         height: 100vh;
     }
   .masthead .masthead-avatar {
-      /* position: absolute; */
+      position: relative;
+      z-index: 1;
       top: 20%;
       left: 25%;
       box-shadow: 0 0 25px rgba(214,215,216,.6);
@@ -565,11 +566,10 @@ pre code {
     }
 }
 @media (min-width: 992px) {
-  /* .masthead .masthead-avatar {
-      position: absolute;
-      top: 20%;
-      left: 44.5%;
-  } */
+  .masthead .masthead-avatar {
+    position: relative;
+    z-index: 1;
+  }
     .container {
         max-width: 920px;
     }
@@ -9040,8 +9040,8 @@ a.text-dark:hover {
     animation-duration: 2s;
 }
 .masthead .masthead-avatar {
-    /* position: absolute; */
-    z-index: 100;
+    position: relative;
+    z-index: 1;
     /* right: 40; */
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(214,215,216,.6);
