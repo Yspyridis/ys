@@ -9475,6 +9475,8 @@ form .row:first-child .floating-label-form-group {
 	position: absolute;
 	top: 80%;
 	left: 50%;
+    animation-name: name;
+    animation-duration: 5s;
 	transform: translate(-50%, -50%);
 }
 .scroll-b a{
