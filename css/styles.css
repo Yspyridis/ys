@@ -511,8 +511,8 @@ pre code {
   .masthead .masthead-avatar {
       position: relative;
       z-index: 1;
-      top: 20%;
-      left: 25%;
+      /* top: 20%;
+      left: 25%; */
       box-shadow: 0 0 25px rgba(214,215,216,.6);
   }
   .masthead .masthead-heading {
