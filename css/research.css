@@ -1,0 +1,49 @@
+.acc-container {
+    width: 100%;
+    margin: 2rem;
+}
+
+.acc-btn {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 25px;
+    cursor: pointer;
+    color: black;
+    background: #002a4b12;
+    border-radius: 0.25rem;
+    /* font-family: 'Share Tech Mono', monospace; */
+}
+
+.acc-content {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    padding: 30px;
+    height: auto;
+}
+
+.acc-content li {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.25rem;
+}
+
+.acc-content li a {
+    color: #062c33;
+}
+
+.acc-content li a:hover {
+    color: #818b8f;
+}
+
+.expand-button {
+    float: right;
+    margin-top: -1.3rem;
+    animation: anim 2s infinite;
+}
+
+#research h4 {
+    font-weight: 100;
+    font-size: 0.95rem;
+}

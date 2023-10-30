@@ -1,414 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Yannis Spyridis</title>
-        <!-- Font Awesome icons (free version)-->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet">
-        <!-- Fonts CSS-->
-        <link rel="stylesheet" href="css/heading.css">
-        <link rel="stylesheet" href="css/body.css">
-        <link rel="stylesheet" href="css/parallax_stars.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    </head>
-    <body id="page-top">
-        <nav class="navbar navbar-expand-lg fixed-top bg-dark" id="mainNav">
-            <!-- <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">YS</a> -->
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" src="assets/img/logo2/logo-white.png"></a>
-            <!-- <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" src="assets/img/ylogo.png"</a> -->
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">EU Projects</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#research">Research</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-                        </li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yannis Spyridis</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/research.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/parallax_stars.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body id="home">
+
+    <nav id="nav" class="navbar">
+        <div class="container">
+            <a class="brand" href="#home"><img class="logo" src="img/logo-white.png"></a>
+            <button
+                onclick="this.classList.toggle('collapsed');document.getElementById('nav-links').classList.toggle('expanded')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <img class="masthead-avatar" src="img/yannis.jpg" alt=""></img>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <h1 class="masthead-heading">YANNIS SPYRIDIS</h1>
+        <br>
+        <p class="masthead-subheading">Research Scientist - Software Engineer</p>
+
+        <div class="scroll-b">
+            <a class="nav-link js-scroll-trigger" href="#about"><span></span></a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container push">
+            <div class="hc">
+                <h2>About</h2>
             </div>
-        </nav>
-        <header class="masthead bg-primary text-white text-center">
-            <!-- <div class="container d-flex align-items-center flex-column"> -->
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/yannis5.jpg" alt="">
-                <!-- Masthead Heading-->
-                <!-- <h1 class="masthead-heading mb-0">Yannis Spyridis</h1> -->
-                <!-- <h1 class="masthead-heading mb-0">YANNIS SPYRIDIS</h1> -->
-                <!-- Icon Divider-->
-                <!-- <div class="divider-custom divider-light"></div> -->
-                <!-- <br> -->
-                <!-- Masthead Subheading-->
-                <!-- <p class="pre-wrap masthead-subheading font-weight-light mb-0">PhD Student <i class="fa fa-code light"></i> Research Associate</p> -->
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
-                <h1 class="masthead-heading mb-0">YANNIS SPYRIDIS</h1>
-                <br>
-                <!-- <p class="pre-wrap masthead-subheading font-weight-light mb-0">PhD Student <i class="fa fa-code light"></i> Research Associate</p> -->
-                <!-- <p class="pre-wrap masthead-subheading font-weight-light mb-0">Research Associate <i class="fa fa-code light"></i> Software Engineer</p> -->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Research Scientist - Software Engineer</p>
-
-                <div class="scroll-b">
-                    <!-- <a class="scroll-button nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">></a> -->
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about"><span></span></a>
-                </div>
-
-            <!-- </div> -->
-        </header>
-        <section class="page-section mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block push">About</h2>
-                </div>
-                <!-- About Section Content-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 ml-auto">
-                        <p id="l1" class="pre-wrap lead">Yannis Spyridis holds a BSc in Computer Science from the University of Sheffield, where he is currently pursuing a PhD diploma at the department of Electrical and Electronic Engineering. He is also involved in several European research projects, funded by the Horizon 2020 and Erasmus+ programmes.</p>
-                    </div>
-                    <!-- <div class="col-lg-2 ml-auto"></div> -->
-                    <div class="col-lg-6 mr-auto">
-                        <p class="pre-wrap lead">His main research interests evolve around the areas of multi-agent cooperative policies in unmanned aerial vehicle networks through dynamic programming approaches, as well as security and privacy in smart networks. He is also engaged in several mobile and web development projects.</p>
-                    </div>
-                </div>
+            <div class="about-content pull">
+                <p>Yannis Spyridis holds a BSc in Computer Science from the University of Sheffield, where he is
+                    currently pursuing a PhD diploma at the department of Electrical and Electronic Engineering. He is
+                    also involved in several European research projects, funded by the Horizon 2020 and Erasmus+
+                    programmes.</p>
+                <p>His main research interests evolve around the areas of multi-agent cooperative policies in unmanned
+                    aerial vehicle networks through dynamic programming approaches, as well as security and privacy in
+                    smart networks. He is also engaged in several mobile and web development projects.</p>
             </div>
-        </section>
-        <section class="page-section bg-primary text-white portfolio" id="projects">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <div class="text-center push">
-                    <h2 class="page-section-heading mb-0 d-inline-block">EU Projects</h2>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Items-->
-                    <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-info fa-2x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/sdn-logo-sq.jpg"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-info fa-2x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/spear-logo-sq.jpg"/>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row justify-content-center">
-                    <!-- Portfolio Items-->
-                    <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-info fa-2x"></i></div>
-                            </div><img class="img-fluid-2" src="assets/img/portfolio/respond-a_logo_cropped.jpg"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Modal-->
-        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-window-close"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <img class="img-fluid rounded mb-5 cardimg" src="assets/img/portfolio/sdn-logo.png"/>
-                                    <p class="mb-5">SDN-microSENSE aims at providing and demonstrating a secure, resilient to cyber-attacks, privacy-enabled, and protected against data breaches solution for decentralised Electrical Power and Energy Systems (EPES). All designed, developed, and tested technologies consider the latest related research findings and maintain high compliance with current industrial standards (e.g., IEC standards).</p>
-                                    <button class="btn btn-primary"><a class="text-white" href="https://www.sdnmicrosense.eu/" target="_blank">Official Website</a></button>
-                                    <!-- <button class="btn btn-primary"><a class="text-white" href="" target="">Close</a></button> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="container hc">
+                <p>He is currently <span style="color: #818b8f;">open for work</span>.</p>
+                <a href="mailto:io.spyridis@gmail.com">
+                    <button>Contact</button>
+                </a>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-window-close"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5 cardimg" src="assets/img/portfolio/spear-logo-sq.jpg"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="pull justify">The SPEAR (Secure and PrivatE smArt gRid) project is a research program, funded by the Horizon 2020 framework programme of the European Union and it aims at developing an integrated platform of methods, processes, and tools for:
+    </section>
 
-                                    <li class="justify">Timely detecting evolved security attacks using big data analytics, advanced visual-aided anomaly detection tools, and smart node trust management schemes;</li>
-                                    <li class="justify">Developing an advanced forensic readiness framework for collecting attack traces and preparing the necessary legal evidence in court, while preserving user private information;</li>
-                                    <li class="justify">Implementing an anonymous smart grid channel for mitigating the lack of trust in exchanging sensitive information about cyberattack incidents;</li>
-                                    <li class="justify">Performing risk analysis and awareness through cyber hygiene frameworks, while empowering EU-wide consensus, by collaborating with European and global security organizations, standardization bodies, industrial groups and smart grid operators;</li>
-                                    <li class="justify">Exploiting the research outcomes to more critical infrastructure domains, while creating competitive business models for utilizing the implemented security tools in smart grid operators and actors across Europe.</li></p>
-                                    <button class="btn btn-primary"><a class="text-white" href="https://www.spear2020.eu/" target="_blank">Official Website</a></button>
-                                </div>
-                            </div>
+    <section id="portfolio" class="dark">
+        <div class="container push">
+            <div class="hc">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="about-content pull">
+
+                <div class="card">
+                    <h2 class="card-title">NLP Application</h2>
+                    <div class="card-content">
+                        <div id="nlpapp" class="pcard">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-window-close"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <img class="img-fluid rounded mb-5 cardimg" src="assets/img/portfolio/respond-a_logo_cropped.jpg"/>
-                                    <p class="mb-5">The RESPOND-A project was established to create immediate access to technological advancements for First Responders and sets its proposal focus within designing and implementing network-enabled tools and innovative equipment that will entail continuous security and Safety Assessment along with situational-wide monitoring capabilities to the Responders for resolving those gaps under all the three hazard types mentioned previously. The uprising focus of the intended tools and equipment will lay within dimensioning the holistic viewpoint and management of the disaster incident in real-time via familiar to First Responders devices (i.e. personal smartphones, tablets, laptops, etc.), without the assistance of neither specialised personnel or telecommunication service providers. </p>
-                                    <button class="btn btn-primary"><a class="text-white" href="https://respond-a-project.eu/" target="_blank">Official Website</a></button>
-                                    <!-- <button class="btn btn-primary"><a class="text-white" href="" target="">Close</a></button> -->
-                                </div>
-                            </div>
-                        </div>
+                    <div class="buttons">
+                        <button id="nlp_demo">Demo</button>
+                        <button id="nlp_github">GitHub</button>
+                        <button id="nlp_preview">Preview</button>
                     </div>
                 </div>
+                <div id="preview_nlp" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close_nlp_preview">&times;</span>
+                        <img src="img/nlp_preview.png" alt="Popup Image">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="card-title">Smart Grid Dashboard</h2>
+                    <div class="card-content">
+                        <div id="dashboard" class="pcard">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="dash_github">GitHub</button>
+                        <button id="dash_preview">Preview</button>
+                    </div>
+                </div>
+                <div id="preview_dash" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close_dash_preview">&times;</span>
+                        <img src="img/dash_preview.png" alt="Popup Image">
+                    </div>
+                </div>
+
+
             </div>
         </div>
+    </section>
 
-        <section class="page-section portfolio" id="research">
-            <div class="container">
-
-                <div class="text-center push">
-                    <h2 class="page-section-heading mb-0 d-inline-block">Research</h2>
-                </div>
-
-                <div class="text-center push">
-                    <h5>Scientific Publications</h5>
-                </div>
-
+    <section id="research">
+        <div class="container push">
+            <div class="hc">
+                <h2>Scientific Publications</h2>
+            </div>
+            <div class="about-content pull">
                 <div class="acc-container">
-                    <div class="acc-btn"><h6>International peer-reviewed Journals</h6><div class="expand-button">></div></div>
-                    <!-- <div class="scroll-b">
-                        <span></span>
-                    </div> -->
-                    <div class="acc-content">
-                    <ul>
-                        <li>A. D. Bandy, Y. Spyridis, B. Villarini and Vasileios Argyriou, "<i>Intraclass Clustering-Based CNN Approach for Detection of Malignant Melanoma</i>," Sensors, 2023, 23, 926, doi: <a href="https://doi.org/10.3390/s23020926" target="_blank">https://doi.org/10.3390/s23020926</a>.</li>
-                        <li>P. G. Radoglou, P. Sarigiannidis, C. Dalamagkas, Y. Spyridis, T. Lagkas, et al., "<i>SDN-Based Resilient Smart Grid: The SDN-microSENSE Architecture</i>," Digital, 2021, 1, no. 4, doi: <a href="https://doi.org/10.3390/digital1040013" target="_blank">10.3390/digital1040013</a>.</li>
-                        <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis, V. Argyriou, A. Sarigiannidis, G. Eleftherakis, J. Zhang, "<i>Towards 6G IoT: Tracing Mobile Sensor Nodes with Deep Learning Clustering in UAV Networks</i>," Sensors 2021, 21, 3936, doi: <a href="https://doi.org/10.3390/s21113936" target="_blank">10.3390/s21113936</a>.</li>
-                        <li>P. G. Radoglou, P. Sarigiannidis, E. Iturbe, E. Rios, S. Martinez, A. Sarigiannidis,  G. Efstathopoulos, Y. Spyridis, A. Sesis, et al., "<i>SPEAR SIEM: A Security Information and Event Management System for the Smart Grid</i>," Computer Networks, 2021, doi: <a href="https://doi.org/10.1016/j.comnet.2021.108008" target="_blank">10.1016/j.comnet.2021.108008</a>.</li>
-                        <li>Z. Sun, Y. Spyridis, T. Lagkas, A. Sesis, G. Efstathopoulos, P. Sarigiannidis, "<i>End-to-End Deep Graph Convolutional Neural Network Approach for Intentional Islanding in Power Systems Considering Load-Generation Balance</i>," Sensors 2021, 21, 1650, doi: <a href="https://doi.org/10.3390/s21051650" target="_blank">10.3390/s21051650</a>.</li>
-                        <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis, J. Zhang, "<i>Modelling and simulation of a new cooperative algorithm for UAV swarm coordination in mobile RF target tracking</i>," Simulation Modelling Practice and Theory, Volume 107, 2021, 102232, ISSN 1569-190X, doi: <a href="https://doi.org/10.1016/j.simpat.2020.102232" target="_blank">10.1016/j.simpat.2020.102232</a>.</li>
-                    </ul>
+                    <div id="journal" class="acc-btn">
+                        <h4>International peer-reviewed Journals</h4>
+                        <div class="expand-button">></div>
                     </div>
-                    <div class="small-sep"></div>
-            
-                    <div class="acc-btn"><h6>International peer-reviewed Conference Proceedings</h6><div class="expand-button">></div></div>
                     <div class="acc-content">
-                    <ul>
+                        <ul>
+                            <li>A. D. Bandy, Y. Spyridis, B. Villarini and Vasileios Argyriou, "<i>Intraclass
+                                    Clustering-Based CNN Approach for Detection of Malignant Melanoma</i>," Sensors,
+                                2023, 23, 926, doi: <a href="https://doi.org/10.3390/s23020926"
+                                    target="_blank">10.3390/s23020926</a>.</li>
+                            <li>P. G. Radoglou, P. Sarigiannidis, C. Dalamagkas, Y. Spyridis, T. Lagkas, et al.,
+                                "<i>SDN-Based Resilient Smart Grid: The SDN-microSENSE Architecture</i>," Digital, 2021,
+                                1, no. 4, doi: <a href="https://doi.org/10.3390/digital1040013"
+                                    target="_blank">10.3390/digital1040013</a>.</li>
+                            <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis, V. Argyriou, A. Sarigiannidis, G.
+                                Eleftherakis, J. Zhang, "<i>Towards 6G IoT: Tracing Mobile Sensor Nodes with Deep
+                                    Learning Clustering in UAV Networks</i>," Sensors 2021, 21, 3936, doi: <a
+                                    href="https://doi.org/10.3390/s21113936" target="_blank">10.3390/s21113936</a>.</li>
+                            <li>P. G. Radoglou, P. Sarigiannidis, E. Iturbe, E. Rios, S. Martinez, A. Sarigiannidis, G.
+                                Efstathopoulos, Y. Spyridis, A. Sesis, et al., "<i>SPEAR SIEM: A Security Information
+                                    and Event Management System for the Smart Grid</i>," Computer Networks, 2021, doi:
+                                <a href="https://doi.org/10.1016/j.comnet.2021.108008"
+                                    target="_blank">10.1016/j.comnet.2021.108008</a>.
+                            </li>
+                            <li>Z. Sun, Y. Spyridis, T. Lagkas, A. Sesis, G. Efstathopoulos, P. Sarigiannidis,
+                                "<i>End-to-End Deep Graph Convolutional Neural Network Approach for Intentional
+                                    Islanding in Power Systems Considering Load-Generation Balance</i>," Sensors 2021,
+                                21, 1650, doi: <a href="https://doi.org/10.3390/s21051650"
+                                    target="_blank">10.3390/s21051650</a>.</li>
+                            <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis, J. Zhang, "<i>Modelling and simulation of a
+                                    new cooperative algorithm for UAV swarm coordination in mobile RF target
+                                    tracking</i>," Simulation Modelling Practice and Theory, Volume 107, 2021, 102232,
+                                ISSN 1569-190X, doi: <a href="https://doi.org/10.1016/j.simpat.2020.102232"
+                                    target="_blank">10.1016/j.simpat.2020.102232</a>.</li>
+                        </ul>
+                    </div>
 
-                        <li>Y. Spyridis, A. Gkelias, V. Argyriou, "<i>Variational Quantum Approach for the Multiple Traveling Salesman Problem Optimisation</i>", 19th International Conference on Distributed Computing in Smart Systems and the Internet of Things (DCOSS-IoT), Paphos, Cyprus, 2023, pp. 354-358. IEEE, 2023.</li>
+                    <div style="margin-top: 1rem;" class="small-sep"></div>
 
-                        <li>G. M. Rajegowda, Y. Spyridis, B. Villarini, V. Argyriou, "<i>An AI-Assisted Skincare Routine Recommendation System in XR</i>", 7th International Conference on Artificial Intelligence and Virtual Reality (AIVR2023), Kumamoto, Japan, Springer, 2023</li>
+                    <div id="conference" class="acc-btn">
+                        <h4>International peer-reviewed Conference Proceedings</h4>
+                        <div class="expand-button">></div>
+                    </div>
+                    <div class="acc-content">
+                        <ul>
 
-                        
-                        <li>A. Sesis, I. Siniosoglou, Y. Spyridis, et al., "<i>A Robust Deep Learning Architecture for FireFighter PPEs Detection</i>", 2022 IEEE 8th World Forum on Internet of Things (WF-IoT), Yokohama, Japan, 2022, pp. 1-6, doi: <a href="https://10.1109/WF-IoT54382.2022.10152263" target="_blank">10.1109/WF-IoT54382.2022.10152263</a>.</li>
-                        <li>O. Peretti, Y. Spyridis, et al., "<i>Augmented reality training, command and control framework for first responders</i>," 2022 7th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM), Ioannina, Greece, 2022, pp. 1-5, doi: <a href="https://10.1109/SEEDA-CECNSM57760.2022.9932966" target="_blank">10.1109/SEEDA-CECNSM57760.2022.9932966</a>.</li>
-                        <li>H. Arregui, E. Irigoyen, I. Cejudo, S. Simonsen, D. Ribar, M. A. Kourtis, Y. Spyridis, et al., "<i>An Augmented Reality Framework for First Responders: the RESPOND-A project approach</i>," 2022 Panhellenic Conference on Electronics & Telecommunications (PACET), Tripolis, Greece, 2022, pp. 1-6 doi: <a href="https://10.1109/PACET56979.2022.9976376" target="_blank">10.1109/PACET56979.2022.9976376</a>.</li>
-                        <li>Z. Sun, Y. Spyridis, A. Sesis, G. Efstathopoulos, E. Grigoriou, T. Lagkas, P. Sarigiannidis, "<i>Intentional Islanding of Power Systems Through Self-Embedding Learning</i>," 2021 IEEE Globecom Workshops (GC Wkshps), 2021, pp. 1-6, doi: <a href="https://doi.org/http://dx.doi.org/10.1109/GCWkshps52748.2021.9682069" target="_blank">10.1109/GCWkshps52748.2021.9682069</a>.</li>
-                        <li>I. Siniosoglou, P. Sarigiannidis, Y. Spyridis, A. Khadka, G. Efstathopoulos, T. Lagkas, "<i>Synthetic Traffic Signs Dataset for Traffic Sign Detection & Recognition In Distributed Smart Systems</i>," 2021 17th International Conference on Distributed Computing in Sensor Systems (DCOSS), 2021, pp. 302-308, doi: <a href="https://doi.org/10.1109/DCOSS52077.2021.00056" target="_blank">10.1109/DCOSS52077.2021.00056</a>.</li>
-                        <li>O. Peretti, Y. Spyridis, A. Sesis, G. Efstathopoulos, "<i>Gamified First Responder Training Solution in Virtual Reality</i>," 2021 17th International Conference on Distributed Computing in Sensor Systems (DCOSS), 2021, pp. 295-301, doi: <a href="https://doi.org/10.1109/DCOSS52077.2021.00055" target="_blank">10.1109/DCOSS52077.2021.00055</a>.</li>
-                        <li>P. S. Paradell, Y. Spyridis, A. Colet, A. Ivanova, J. L. Domínguez – García, A. Sesis, G. Efstathopoulos, "<i>Increasing resilience of power systems using intentional islanding; a comparison of Binary genetic algorithm and deep learning based methods</i>," 2021 IEEE International Conference on Cyber Security and Resilience (CSR), 2021, pp. 491-496, doi: <a href="https://doi.org/10.1109/CSR51186.2021.9527918" target="_blank">10.1109/CSR51186.2021.9527918</a>.</li>
-                        <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis and J. Zhang, "<i>Rule-based Autonomous Tracking of RF Transmitter Using a UAV Swarm</i>," 2020 12th International Symposium on Communication Systems, Networks and Digital Signal Processing (CSNDSP), Porto, Portugal, 2020, pp. 1-3, doi: <a href="https://ieeexplore.ieee.org/document/9249591" target="_blank">10.1109/CSNDSP49049.2020.9249591<a/>.</li>
-                    </ul>
+                            <li>Y. Spyridis, A. Gkelias, V. Argyriou, "<i>Variational Quantum Approach for the Multiple
+                                    Traveling Salesman Problem Optimisation</i>", 19th International Conference on
+                                Distributed Computing in Smart Systems and the Internet of Things (DCOSS-IoT), Paphos,
+                                Cyprus, 2023, pp. 354-358. IEEE, 2023, doi: <a
+                                    href="https://110.1109/DCOSS-IoT58021.2023.00064"
+                                    target="_blank">10.1109/DCOSS-IoT58021.2023.00064</a>.</li>
+
+                            <li>G. M. Rajegowda, Y. Spyridis, B. Villarini, V. Argyriou, "<i>An AI-Assisted Skincare
+                                    Routine Recommendation System in XR</i>", 7th International Conference on Artificial
+                                Intelligence and Virtual Reality (AIVR2023), Kumamoto, Japan, Springer, 2023</li>
+
+                            <li>A. Sesis, I. Siniosoglou, Y. Spyridis, et al., "<i>A Robust Deep Learning Architecture
+                                    for FireFighter PPEs Detection</i>", 2022 IEEE 8th World Forum on Internet of Things
+                                (WF-IoT), Yokohama, Japan, 2022, pp. 1-6, doi: <a
+                                    href="https://10.1109/WF-IoT54382.2022.10152263"
+                                    target="_blank">10.1109/WF-IoT54382.2022.10152263</a>.</li>
+                            <li>O. Peretti, Y. Spyridis, et al., "<i>Augmented reality training, command and control
+                                    framework for first responders</i>," 2022 7th South-East Europe Design Automation,
+                                Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM),
+                                Ioannina, Greece, 2022, pp. 1-5, doi: <a
+                                    href="https://10.1109/SEEDA-CECNSM57760.2022.9932966"
+                                    target="_blank">10.1109/SEEDA-CECNSM57760.2022.9932966</a>.</li>
+                            <li>H. Arregui, E. Irigoyen, I. Cejudo, S. Simonsen, D. Ribar, M. A. Kourtis, Y. Spyridis,
+                                et al., "<i>An Augmented Reality Framework for First Responders: the RESPOND-A project
+                                    approach</i>," 2022 Panhellenic Conference on Electronics & Telecommunications
+                                (PACET), Tripolis, Greece, 2022, pp. 1-6 doi: <a
+                                    href="https://10.1109/PACET56979.2022.9976376"
+                                    target="_blank">10.1109/PACET56979.2022.9976376</a>.</li>
+                            <li>Z. Sun, Y. Spyridis, A. Sesis, G. Efstathopoulos, E. Grigoriou, T. Lagkas, P.
+                                Sarigiannidis, "<i>Intentional Islanding of Power Systems Through Self-Embedding
+                                    Learning</i>," 2021 IEEE Globecom Workshops (GC Wkshps), 2021, pp. 1-6, doi: <a
+                                    href="https://doi.org/http://dx.doi.org/10.1109/GCWkshps52748.2021.9682069"
+                                    target="_blank">10.1109/GCWkshps52748.2021.9682069</a>.</li>
+                            <li>I. Siniosoglou, P. Sarigiannidis, Y. Spyridis, A. Khadka, G. Efstathopoulos, T. Lagkas,
+                                "<i>Synthetic Traffic Signs Dataset for Traffic Sign Detection & Recognition In
+                                    Distributed Smart Systems</i>," 2021 17th International Conference on Distributed
+                                Computing in Sensor Systems (DCOSS), 2021, pp. 302-308, doi: <a
+                                    href="https://doi.org/10.1109/DCOSS52077.2021.00056"
+                                    target="_blank">10.1109/DCOSS52077.2021.00056</a>.</li>
+                            <li>O. Peretti, Y. Spyridis, A. Sesis, G. Efstathopoulos, "<i>Gamified First Responder
+                                    Training Solution in Virtual Reality</i>," 2021 17th International Conference on
+                                Distributed Computing in Sensor Systems (DCOSS), 2021, pp. 295-301, doi: <a
+                                    href="https://doi.org/10.1109/DCOSS52077.2021.00055"
+                                    target="_blank">10.1109/DCOSS52077.2021.00055</a>.</li>
+                            <li>P. S. Paradell, Y. Spyridis, A. Colet, A. Ivanova, J. L. Domínguez – García, A. Sesis,
+                                G. Efstathopoulos, "<i>Increasing resilience of power systems using intentional
+                                    islanding; a comparison of Binary genetic algorithm and deep learning based
+                                    methods</i>," 2021 IEEE International Conference on Cyber Security and Resilience
+                                (CSR), 2021, pp. 491-496, doi: <a href="https://doi.org/10.1109/CSR51186.2021.9527918"
+                                    target="_blank">10.1109/CSR51186.2021.9527918</a>.</li>
+                            <li>Y. Spyridis, T. Lagkas, P. Sarigiannidis and J. Zhang, "<i>Rule-based Autonomous
+                                    Tracking of RF Transmitter Using a UAV Swarm</i>," 2020 12th International Symposium
+                                on Communication Systems, Networks and Digital Signal Processing (CSNDSP), Porto,
+                                Portugal, 2020, pp. 1-3, doi: <a href="https://ieeexplore.ieee.org/document/9249591"
+                                    target="_blank">10.1109/CSNDSP49049.2020.9249591<a />.</li>
+                        </ul>
                     </div>
                 </div>
-            
-                <!-- <div class="row justify-content-center">
-
-                    <article id="iot" class="rcard">
-                      <div class="img rcentered">
-                      <img src="assets/img/research/iot.jpg" alt="">
-                      </div>
-                      <h6>Internet of Things</h6>
-                      <p>The Internet of things (IoT) describes the network of physical objects —“things”— that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet. Traditional fields of embedded systems, wireless sensor networks, control systems, automation (including home and building automation), and others all contribute to enabling the Internet of things.
-                      <br><br>
-                      In the consumer market, IoT technology is most synonymous with products pertaining to the concept of the "smart home", including devices and appliances (such as lighting fixtures, thermostats, home security systems and cameras, and other home appliances) that support one or more common ecosystems, and can be controlled via devices associated with that ecosystem, such as smartphones and smart speakers.
-                      </p>
-                    </article>
-
-                    <article id="drone" class="rcard">
-                      <div class="img rcentered">
-                          <img src="assets/img/research/drone.png" alt="">
-                      </div>
-                      <h6>Unmanned aerial vehicles</h6>
-                      <p>Unmanned aerial vehicles (UAVs), commonly known as drones, are aircraft without a human pilot on board. UAVs are a component of an unmanned aircraft system (UAS); which include a UAV, a ground-based controller, and a system of communications between the two. The flight of UAVs may operate with various degrees of autonomy: either under remote control by a human operator or autonomously by onboard computers referred to as an autopilot.
-                      <br><br>
-                      UAVs can be categorized based on the technology they utilise into fixed-wing aircraft, single-rotor, or multicopter rotorcraft, while their size can range from very small (nano/micro drones) to very large. UAVs are expected to enter the grand scheme of the Internet of things, offering vast potential in public and civil applications.
-                      </p>
-                    </article>
-
-                    <article id="fanet" class="rcard">
-                      <div class="img rcentered">
-                          <img src="assets/img/research/fanet.png" alt="">
-                      </div>
-                      <h6>Flying ad hoc networks</h6>
-                      <p>The proliferation of sensor technology has enabled UAVs to act as sensor devices that are being utilised in cooperative aerial communication networks. This new paradigm of wireless communication network is referred to as flying ad-hoc networks (FANETs). These networks aim at a more effective intercommunication between the UAVs, support schemes for the connection among multiple UAV systems and assist in controlling the autonomous movement of drones.
-                      <br><br>
-                      The use of several small UAVs organised in formations or swarms, offers novel solutions in various areas, such as agriculture, environment inspection, disaster detection, search and rescue operations, infrastructure maintenance, et al.</p>
-                    </article>
-                </div> -->
-
-                <!-- <div class="divider-custom divider-light"></div>
-                <div class="divider-custom divider-light"></div> -->
-
-                <!-- <div class="row justify-content-center">
-                  <div class="col-md-3"><b>Journal Articles</b></div>
-                  <div class="col-md-9">
-                    <!-- <br> -->
-                  <!-- </div>
-                </div> -->
-                <!-- <hr> -->
-
-                <!-- <div class="row justify-content-center">
-                  <div class="col-md-2">September 2021</div>
-                  <div class="col-md-10">
-                  <p>P. G. Radoglou, P. Sarigiannidis, C. Dalamagkas, Y. Spyridis, T. Lagkas, et al., "<i>SDN-Based Resilient Smart Grid: The SDN-microSENSE Architecture</i>," Digital, 2021, 1, no. 4, doi: <a href="https://doi.org/10.3390/digital1040013" target="_blank">10.3390/digital1040013</a>.</p>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">June 2021</div>
-                  <div class="col-md-10">
-                  <p>Y. Spyridis, T. Lagkas, P. Sarigiannidis, V. Argyriou, A. Sarigiannidis, G. Eleftherakis, J. Zhang, "<i>Towards 6G IoT: Tracing Mobile Sensor Nodes with Deep Learning Clustering in UAV Networks</i>," Sensors 2021, 21, 3936, doi: <a href="https://doi.org/10.3390/s21113936" target="_blank">10.3390/s21113936</a>.</p>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">March 2021</div>
-                  <div class="col-md-10">
-                  <p>P. G. Radoglou, P. Sarigiannidis, E. Iturbe, E. Rios, S. Martinez, A. Sarigiannidis,  G. Efstathopoulos, Y. Spyridis, A. Sesis, et al., "<i>SPEAR SIEM: A Security Information and Event Management System for the Smart Grid</i>," Computer Networks, 2021, doi: <a href="https://doi.org/10.1016/j.comnet.2021.108008" target="_blank">10.1016/j.comnet.2021.108008</a>.</p>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">February 2021</div>
-                  <div class="col-md-10">
-                  <p>Z. Sun, Y. Spyridis, T. Lagkas, A. Sesis, G. Efstathopoulos,
-                  P. Sarigiannidis, "<i>End-to-End Deep Graph Convolutional Neural Network Approach for Intentional Islanding in Power Systems Considering Load-Generation Balance</i>," Sensors 2021, 21, 1650, doi: <a href="https://doi.org/10.3390/s21051650" target="_blank">10.3390/s21051650</a>.</p>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">November 2020</div>
-                  <div class="col-md-10">
-                  <p>Y. Spyridis, T. Lagkas, P. Sarigiannidis, J. Zhang, "<i>Modelling and simulation of a new cooperative algorithm for UAV swarm coordination in mobile RF target tracking</i>," Simulation Modelling Practice and Theory, Volume 107, 2021, 102232, ISSN 1569-190X, doi: <a href="https://doi.org/10.1016/j.simpat.2020.102232" target="_blank">10.1016/j.simpat.2020.102232</a>.</p>
-                  </div>
-                </div>
-
-                <br>
-                <div class="row justify-content-center">
-                  <div class="col-md-3"><b>Conference Papers</b></div>
-                  <div class="col-md-9">
-                  </div>
-                </div>
-                <hr>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">December 2021</div>
-                  <div class="col-md-10">
-                  <p>Z. Sun, Y. Spyridis, A. Sesis, G. Efstathopoulos, E. Grigoriou, T. Lagkas, P. Sarigiannidis, "<i>Intentional Islanding of Power Systems Through Self-Embedding Learning</i>," 2021 IEEE Globecom Workshops (GC Wkshps), 2021, pp. 1-6, doi: <a href="https://doi.org/http://dx.doi.org/10.1109/GCWkshps52748.2021.9682069" target="_blank">10.1109/GCWkshps52748.2021.9682069</a>.</p>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">July 2021</div>
-                  <div class="col-md-10">
-                  <p>I. Siniosoglou, P. Sarigiannidis, Y. Spyridis, A. Khadka, G. Efstathopoulos, T. Lagkas, "<i>Synthetic Traffic Signs Dataset for Traffic Sign Detection & Recognition In Distributed Smart Systems</i>," 2021 17th International Conference on Distributed Computing in Sensor Systems (DCOSS), 2021, pp. 302-308, doi: <a href="https://doi.org/10.1109/DCOSS52077.2021.00056" target="_blank">10.1109/DCOSS52077.2021.00056</a>.</p>
-                </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">July 2021</div>
-                  <div class="col-md-10">
-                  <p>O. Peretti, Y. Spyridis, A. Sesis, G. Efstathopoulos, "<i>Gamified First Responder Training Solution in Virtual Reality</i>," 2021 17th International Conference on Distributed Computing in Sensor Systems (DCOSS), 2021, pp. 295-301, doi: <a href="https://doi.org/10.1109/DCOSS52077.2021.00055" target="_blank">10.1109/DCOSS52077.2021.00055</a>.</p>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">July 2021</div>
-                  <div class="col-md-10">
-                  <p>P. S. Paradell, Y. Spyridis, A. Colet, A. Ivanova, J. L. Domínguez – García, A. Sesis, G. Efstathopoulos, "<i>Increasing resilience of power systems using intentional islanding; a comparison of Binary genetic algorithm and deep learning based methods</i>," 2021 IEEE International Conference on Cyber Security and Resilience (CSR), 2021, pp. 491-496, doi: <a href="https://doi.org/10.1109/CSR51186.2021.9527918" target="_blank">10.1109/CSR51186.2021.9527918</a>.</p>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-md-2">July 2020</div>
-                  <div class="col-md-10">
-                  <p>Y. Spyridis, T. Lagkas, P. Sarigiannidis and J. Zhang, "<i>Rule-based Autonomous Tracking of RF Transmitter Using a UAV Swarm</i>," 2020 12th International Symposium on Communication Systems, Networks and Digital Signal Processing (CSNDSP), Porto, Portugal, 2020, pp. 1-3, doi: <a href="https://ieeexplore.ieee.org/document/9249591" target="_blank">10.1109/CSNDSP49049.2020.9249591<a/>.</p>
-                  </div>
-                </div> -->
-
-            <div class="divider-custom divider-light"></div>
-            <div class="divider-custom divider-light"></div>
-            <!-- <div class="text-center"><img class="logo2" src="assets/img/logo2/logo-black.png"></div> -->
-           
-
-            <!-- <div class="inner hcenter">
-                <span>i</span>
-                <p>Check again soon for more publications and additional content.</p>
-            </div> -->
-            
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- <section class="page-section bg-primary text-white portfolio" id="portfolio">
-            <div class="container">
-                <div class="text-center push">
-                    <h2 class="page-section-heading mb-0 d-inline-block">Portfolio</h2>
-                </div>
-                <div class="divider-custom divider-light"></div>
-                <div class="inner hcenter">
-                    <span>i</span>
-                    <p>To be updated soon.</p>
-                </div>
-            </div>
-        </section> -->
+    <footer>
+        <div class="content">Yannis Spyridis 2023
+            <a>-</a>
+            <a href="mailto:io.spyridis@gmail.com" target="_blank" class="ml fa fa-envelope-o"></a>
+            <a href="https://www.linkedin.com/in/yannis-spyridis-ab710887/" target="_blank"
+                class="ml fa fa-linkedin-square"></a>
+            <a href="https://github.com/Yspyridis" target="_blank" class="ml fa fa-github"></a>
+        </div>
+    </footer>
 
-        <!-- Copyright Section-->
-        <section class="copyright py-4 text-white bg-dark">
-            <!-- <div class="container"><small class="pre-wrap">Yannis Spyridis 2020</small></div> -->
-            <div class="container text-center">
-              <!-- <small class="pre-wrap text-primary">Yannis Spyridis 2020 -</small> -->
-              <div class="text-primary">Yannis Spyridis 2022 -
-              <a href="mailto:io.spyridis@gmail.com" target="_blank" class="ml fa fa-envelope-o"></a>
-              <a href="https://www.linkedin.com/in/yannis-spyridis-ab710887/" target="_blank" class="ml fa fa-linkedin-square"></a>
-              <a href="https://github.com/Yspyridis" target="_blank" class="ml fa fa-github"></a>
-            </div>
-            </div>
-        </section>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script> -->
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
 </html>

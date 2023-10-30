@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* font-family: 'Share Tech Mono', monospace; */
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    height: 5rem;
+    background-color: #000000;
+    transition: all 0.3s ease;
+    animation-name: name;
+    animation-duration: 2s;
+}
+
+
+
+nav .brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+nav a:hover {
+    color: #818b8f;
+} */
+
+.nav-link.active {
+    color: #818b8f;
+}
+
+.navbar-shrink {
+    height: 4rem !important;
+}
+
+section {
+    position: relative;
+    /* min-height: 60vh;
+    max-height: 500px; */
+    height: 500px;
+    z-index: 1;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+section .container {
+    display: block;
+}
+
+footer {
+    position: relative;
+    bottom: 20;
+    z-index: 1;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    height: 4rem !important;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer .content {
+    margin-top: -0.5rem;
+}
+
+footer a {
+    font-family: 'Share Tech Mono', monospace;
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: #818b8f;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    width: 3.8rem;
+}
+
+.hc {
+    text-align: center;
+}
+
+.masthead {
+    z-index: 0;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background-color: #2c3e50;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    padding-top: calc(3rem + 74px);
+    padding-bottom: 6rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.masthead-heading {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.masthead-subheading {
+    /* font-family: 'Share Tech Mono', monospace; */
+    animation-name: name;
+    animation-duration: 2s;
+}
+
+.masthead-avatar {
+    margin-top: 8rem;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(214, 215, 216, .6);
+    width: 12rem;
+}
+
+.dark {
+    /* background-color: #1B2735; */
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    color: #fff;
+}
+
+.push {
+    margin-top: 2rem;
+}
+
+.pull {
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hc button {
+    height: 1.875rem;
+    width: 4.375rem;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #062c33;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container p {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.container button:hover {
+    background-color: #818b8f;
+}
+
+.about-content p {
+    flex: 1;
+    margin: 0 2rem;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Share Tech Mono', monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    text-align: justify;
+}
+
+.scroll-button {
+    float: right;
+    margin-top: -30px;
+    animation: anim 2s infinite;
+    font-size: 2.5rem;
+}
+
+#about,
+#portfolio,
+#research {
+    animation-name: about;
+    animation-duration: 2.5s;
+}
+
+#research {
+    min-height: 600px;
+}
+
+.scroll-b {
+    z-index: 4;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    animation-name: name;
+    animation-duration: 5s;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-b a {
+    margin-top: 40px;
+    color: white;
+}
+
+.scroll-b span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.scroll-b span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.scroll-b span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+.collapse {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+@keyframes animate {
+
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes name {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes about {
+    0% {
+        margin-top: 1000px
+    }
+
+    100% {
+        margin-top: 0px
+    }
+}
