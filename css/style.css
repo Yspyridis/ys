@@ -197,6 +197,8 @@ footer a:hover {
     z-index: 4;
     margin-top: 5rem;
     display: inline-block;
+    animation-name: name;
+    animation-duration: 3s;
 }
 
 .scroll-b a {
