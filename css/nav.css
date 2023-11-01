@@ -21,7 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 
 .navbar ul {
@@ -109,7 +109,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .navbar {
         height: auto;
         padding: 0;
