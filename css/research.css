@@ -16,15 +16,15 @@
 }
 
 .acc-content {
-    width: 100%;
-    margin: 0 auto;
+    /* width: 100%;
+    margin: 0 auto; */
     display: none;
     padding: 30px;
     height: auto;
 }
 
 .acc-content li {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.25rem;

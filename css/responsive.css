@@ -1,20 +1,21 @@
-/* @media (max-height: 500px) {
-    .modal-content {
-        height: fit-content;
-    }
-} */
 @media (max-height: 700px) {
     .modal-content {
         margin-top: 4rem;
-        width: 70%;}
+        width: 70%;
+    }
 }
 
 @media (max-width: 600px) {
     .masthead-subheading a {
         display: block;
     }
+
     .hyphen {
         display: none !important;
+    }
+
+    .acc-container {
+        padding: 0;
     }
 }
 

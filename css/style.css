@@ -151,7 +151,7 @@ footer a:hover {
     height: 1.875rem;
     width: 4.375rem;
     padding: 5px 10px;
-    margin-top: 10px;
+    margin-top: 3rem;
     background-color: #062c33;
     color: #fff;
     border: none;
@@ -159,7 +159,8 @@ footer a:hover {
 }
 
 .container p {
-    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.8rem !important;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container button:hover {
@@ -170,9 +171,9 @@ footer a:hover {
     flex: 1;
     margin: 0 2rem;
     line-height: 1.3rem;
-    font-size: 1rem;
+    /* font-size: 0.8rem !important; */
     text-align: justify;
-    font-family: 'Share Tech Mono', monospace;
+    /* font-family: 'Share Tech Mono', monospace; */
     /* font-family: 'Courier New', Courier, monospace; */
     text-align: justify;
 }

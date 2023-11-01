@@ -21,7 +21,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    /* padding-left: 2rem; */
 }
 
 .navbar ul {
@@ -112,6 +111,9 @@
         max-height: 0;
         margin: 0;
         padding: 0;
+    }
+    .navbar ul li{
+        padding: 0.5rem;
     }
 }
 
