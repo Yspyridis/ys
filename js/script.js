@@ -3,7 +3,7 @@ const nlp_github_button = document.getElementById('nlp_github');
 const dash_github_button = document.getElementById('dash_github');
 
 nlp_demo_button.addEventListener('click', function () {
-    window.open("https://defence-argument-classification.streamlit.app/", '_blank');
+    window.open("https://statement-classification.streamlit.app/", '_blank');
 });
 
 nlp_github_button.addEventListener('click', function () {
