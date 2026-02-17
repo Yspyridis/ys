@@ -25,8 +25,9 @@
 
 .acc-content li {
     font-size: 0.9rem;
+    font-weight: 300;
     margin-bottom: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    /*font-family: "Courier New", Courier, monospace;*/
     line-height: 1.25rem;
 }
 
@@ -45,7 +46,7 @@
 }
 
 #research h4 {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 0.95rem;
 }
 

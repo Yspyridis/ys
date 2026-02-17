@@ -5,8 +5,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    /* font-family: 'Share Tech Mono', monospace; */
+    /*font-family: Arial, sans-serif;*/
+    /*font-family: "Share Tech Mono", monospace;*/
+    /*font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;*/
+    font-family:
+        "Poppins",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
     background-color: #f4f4f4;
     line-height: 1.6;
     margin: 0;
@@ -38,7 +48,7 @@ section {
 }
 
 section h2 {
-    font-family: 'Share Tech Mono', monospace;
+    /*font-family: "Share Tech Mono", monospace;*/
 }
 
 section .container {
@@ -62,7 +72,7 @@ footer .content {
 }
 
 footer a {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: "Share Tech Mono", monospace;
     color: #fff;
     margin: 0 0.5rem;
 }
@@ -94,14 +104,14 @@ footer a:hover {
 
 .masthead {
     z-index: 0;
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     background-color: #2c3e50;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     padding-top: calc(3rem + 74px);
     padding-bottom: 6rem;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: "Share Tech Mono", monospace;
 }
 
 .masthead-heading {
@@ -122,13 +132,13 @@ footer a:hover {
     position: relative;
     z-index: 1;
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(214, 215, 216, .6);
+    box-shadow: 0 0 15px rgba(214, 215, 216, 0.6);
     width: 12rem;
 }
 
 .dark {
     /* background-color: #1B2735; */
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     color: #fff;
 }
 
@@ -160,7 +170,7 @@ footer a:hover {
 
 .container p {
     font-size: 0.9rem !important;
-    font-family: 'Courier New', Courier, monospace;
+    /*font-family: 'Courier New', Courier, monospace;*/
 }
 
 .container button:hover {
@@ -208,7 +218,6 @@ footer a:hover {
     font-size: 3rem;
 }
 
-
 .collapse {
     display: block;
 }
@@ -219,7 +228,6 @@ footer a:hover {
 }
 
 @keyframes animate {
-
     0% {
         opacity: 0;
         transform: rotate(45deg) translate(-5px, -5px);
@@ -271,16 +279,15 @@ footer a:hover {
 
 @keyframes about {
     0% {
-        margin-top: 1000px
+        margin-top: 1000px;
     }
 
     100% {
-        margin-top: 0px
+        margin-top: 0px;
     }
 }
 
 @keyframes bounce {
-
     0% {
         opacity: 0;
         transform: translate(0, -5px);
