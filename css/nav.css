@@ -36,7 +36,7 @@
     color: #ffffff;
     display: block;
     margin: 0 1rem;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: "Share Tech Mono", monospace;
 }
 
 .navbar ul li a:hover {
@@ -66,17 +66,16 @@
 }
 
 .navbar button.collapsed span:nth-child(1) {
-    border: 2px solid #818b8f
+    border: 2px solid #818b8f;
 }
 
 .navbar button.collapsed span:nth-child(2) {
-    border: 2px solid #818b8f
+    border: 2px solid #818b8f;
 }
 
 .navbar button.collapsed span:nth-child(3) {
-    border: 2px solid #818b8f
+    border: 2px solid #818b8f;
 }
-
 
 @media screen and (max-width: 600px) {
     .navbar {
@@ -112,7 +111,7 @@
         margin: 0;
         padding: 0;
     }
-    .navbar ul li{
+    .navbar ul li {
         padding: 0.5rem;
     }
 }
