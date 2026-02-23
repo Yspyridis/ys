@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Focus</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body,
+            html {
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                background: #000;
+                font-family:
+                    "Inter",
+                    -apple-system,
+                    sans-serif;
+            }
+
+            /* Background Layer - High Res Muted Nature */
+            .bg-layer {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background:
+                    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                    url("https://images.unsplash.com/photo-1530037327011-979a1109a5dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop");
+                /*https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2070&auto=format&fit=crop*/
+                /*https://unsplash.com/photos/mountain-scenery-ds_W6kF3IoU*/
+                background-size: cover;
+                background-position: center;
+                z-index: 1;
+            }
+
+            .content-layer {
+                position: relative;
+                z-index: 10;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #focus-btn {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: rgba(255, 255, 255, 0.8);
+                padding: 20px 60px;
+                font-size: 0.7rem;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                cursor: pointer;
+                backdrop-filter: blur(15px);
+                border-radius: 4px;
+                transition: all 0.3s ease;
+            }
+
+            #focus-btn:hover {
+                background: rgba(255, 255, 255, 1);
+                color: #111;
+            }
+
+            #timer {
+                position: fixed;
+                bottom: 40px;
+                right: 50px;
+                color: rgba(255, 255, 255, 0.3);
+                font-size: 1.1rem;
+                font-weight: 300;
+                letter-spacing: 4px;
+                z-index: 10;
+            }
+
+            /* Subtle volume indicator that fades away */
+            #volume-toast {
+                position: fixed;
+                top: 40px;
+                right: 50px;
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 0.7rem;
+                letter-spacing: 2px;
+                opacity: 0;
+                transition: opacity 0.5s;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-layer"></div>
+        <div id="volume-toast">Volume: 100%</div>
+
+        <div class="content-layer">
+            <button id="focus-btn">Begin Focus</button>
+        </div>
+
+        <div id="timer">25:00</div>
+
+        <audio id="player" loop crossorigin="anonymous">
+            <source
+                src="https://stream.zeno.fm/0r0xa792kwzuv"
+                type="audio/mpeg"
+            />
+        </audio>
+
+        <script>
+            const btn = document.getElementById("focus-btn");
+            const audio = document.getElementById("player");
+            const timerDisplay = document.getElementById("timer");
+            const volumeToast = document.getElementById("volume-toast");
+
+            let isPlaying = false;
+            let timeLeft = 25 * 60;
+            let toastTimeout;
+
+            // Toggle Audio Logic
+            function toggleAudio() {
+                if (!isPlaying) {
+                    audio
+                        .play()
+                        .then(() => {
+                            btn.innerText = "Pause";
+                            isPlaying = true;
+                        })
+                        .catch((e) =>
+                            console.log("Click required to start audio."),
+                        );
+                } else {
+                    audio.pause();
+                    btn.innerText = "Resume";
+                    isPlaying = false;
+                }
+            }
+
+            // Fullscreen Logic
+            function toggleFullscreen() {
+                if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+
+            // Sync UI (Subtle Volume Notification)
+            function syncUI() {
+                const vol = Math.round(audio.volume * 100);
+                volumeToast.innerText = `Volume: ${vol}%`;
+                volumeToast.style.opacity = "1";
+                clearTimeout(toastTimeout);
+                toastTimeout = setTimeout(
+                    () => (volumeToast.style.opacity = "0"),
+                    2000,
+                );
+            }
+
+            // Keyboard Event Listeners
+            window.addEventListener("keydown", (e) => {
+                if (e.code === "Space") {
+                    e.preventDefault();
+                    toggleAudio();
+                }
+                if (e.key === "+" || e.key === "=") {
+                    audio.volume = Math.min(1, audio.volume + 0.05);
+                    syncUI();
+                }
+                if (e.key === "-" || e.key === "_") {
+                    audio.volume = Math.max(0, audio.volume - 0.05);
+                    syncUI();
+                }
+                if (e.key.toLowerCase() === "f") {
+                    toggleFullscreen();
+                }
+            });
+
+            btn.addEventListener("click", toggleAudio);
+
+            // Timer Interval
+            setInterval(() => {
+                if (isPlaying && timeLeft > 0) {
+                    timeLeft--;
+                    const m = Math.floor(timeLeft / 60);
+                    const s = timeLeft % 60;
+                    timerDisplay.innerText = `${m}:${s < 10 ? "0" : ""}${s}`;
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>

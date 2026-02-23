@@ -317,6 +317,7 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .project-card {
@@ -365,3 +366,32 @@ footer a:hover {
         padding: 1.25rem;
     }
 }
+
+.btn {
+    margin-top: 10rem;
+    display: inline-block;
+    /*background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);*/
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px 60px;
+    font-size: 0.7rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none; /* anchor default */
+    text-align: center;
+}
+.btn:focus {
+    outline: 2px solid #0056b3;
+}
+.btn:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #111;
+}
+.btn:focus-visible {
+    outline-offset: 2px;
+} /* optional a11y nicety */
