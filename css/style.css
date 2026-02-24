@@ -66,6 +66,7 @@ section .container {
 }
 
 footer {
+    font-family: "Share Tech Mono", monospace;
     position: relative;
     z-index: 1;
     background-color: #000000;
@@ -368,7 +369,7 @@ footer a:hover {
 }
 
 .btn {
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: inline-block;
     /*background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.2);*/
@@ -385,13 +386,17 @@ footer a:hover {
     text-decoration: none; /* anchor default */
     text-align: center;
 }
-.btn:focus {
+/*.btn:focus {
     outline: 2px solid #0056b3;
-}
+}*/
 .btn:hover {
     background: rgba(255, 255, 255, 1);
     color: #111;
 }
 .btn:focus-visible {
     outline-offset: 2px;
-} /* optional a11y nicety */
+}
+
+#focus {
+    min-height: 300px !important;
+}
