@@ -315,7 +315,8 @@ footer a:hover {
 
 .research-projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -327,6 +328,7 @@ footer a:hover {
     text-align: center;
     padding: 1.5rem;
     min-width: 0;
+    max-width: 333px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     transition:
         transform 0.15s ease,
@@ -400,3 +402,15 @@ footer a:hover {
 #focus {
     min-height: 300px !important;
 }
+.author,
+.venue {
+    display: inline;
+}
+
+@media (max-width: 800px) {
+    /* hide all li text by making it transparent */
+    .author,
+    .venue {
+        color: transparent; /* hides plain text nodes (authors, commas, quotes) */
+        display: none;
+    }
